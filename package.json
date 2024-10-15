@@ -1,0 +1,16 @@
+{
+  "name": "mern-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\"\"npm run client\"",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && vite",
+    "dev": "concurrently \"npm run server\"\"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  },
+  "license": "ISC"
+}
